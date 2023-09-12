@@ -1,0 +1,77 @@
+# Lecture 1: Introduction
+- example treatment distant depression
+    - use models to predict resistance to treatment 
+    - use models to identify subtypes of treatment resistances 
+- what is healthcare
+    - have stuff in ur body, 
+    - measure that stuff 
+    - want to optimize something leading to health care outcomes 
+- what is ml for healthcare
+    - use ml to help healthcare outcomes
+## why do we need a class on ml for health care?
+- variety of data
+    - health care outcomes are specific to each person 
+    - data changes a lot based on what hospital someone is in. 
+    - in patient vs out patient visit (person needs to decide to go into the hospital there is selection bias there)
+    - quantities of health care data are exploding. 
+- labels are hard to come by 
+    - what is a disease, how do we label some one as having a certain disease?
+    labels do not have to be well defined. what is autism? 
+- causal mechanism are important 
+    - it is about more than just prediction we also care about causality
+    - not everyone responds the same to the same treatment.
+    - the background of a person maters like a lot
+- predictions vs causality
+    - example: you are in the hospital give people medication for some condition ask, when give medication do people survive longer. we could see people with out treatment live less long, but if we only give treatment to the very sick then there is a confounder. 
+- missing-ness
+    - there is just missing data
+    - it doctors do not do a certain test certain features could be missing. 
+- example 1: why might this be hard 
+    - have health records from hospital
+    - want to know how blood pressure will relate to blood pressure at future physical 
+    - not everyone comes back for future physical.
+    - if take out those who did not come back, then there is selection bias.
+- example 2: 
+    - have x-rays from hospital 1 
+    -  will a model trained on hospital 1 data, work for predictions of other hospitals? 
+    - no it may not there could be domain specific reasons for this.
+- example 3: (success)
+    - pathology (the study of diseases)
+    - CV for radiology is really successful
+## classes of problems 
+- perceptual 
+    - find an image tell if something is there 
+- estimation 
+    - basically just regression
+    - measurement 1 $:\rightarrow$ Measurement 2
+- predictive 
+    -  classification
+- causation
+    - how 1 things lead to another
+## syllabus
+- no homeworks 
+- no exams 
+- this is mainly research focused.
+- there are readings, and reading responses. write 1 paragraph about each reading 
+- class participation/participation.
+- there will be a lecture scribe 
+- do a project that you think is cool, and figure it out in the future. 
+- there are some guest lecturers. 
+- there is a final project paper and presentation, there will be a template.
+- projects can be pretty varied. can you get an llm to write a clinical note.
+- think about the project as we go through stuff.
+- nyu provides google cloud credits to classes so we have compute access. 
+- projects are usually individual
+## quiz 
+- question 1 
+    - that is a pdf not a cdf there is not a super clear interpretation of that
+- question 2: 
+    - $cos(A)\in \mathbb{R}^{M\times N}$
+- question 3: 
+    - a function that has a derivative of 0 before 0 and 1 derivative at 0  not defined at zero. 
+## case study 
+- what is the best way to raise blood pressure in ICU for a type of patient? 
+    - blood pressure falls in ICU
+    - collect data? is hard to do 
+    - what to collect, where to collect, how much to collect. 
+    - 
